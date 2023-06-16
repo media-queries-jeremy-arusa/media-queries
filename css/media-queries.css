@@ -1,7 +1,4 @@
-/*.nav-links {*/
-/*    display:flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/
+
 h1 {
     font-size: 4em;
     margin: unset;
@@ -42,19 +39,21 @@ nav{
 
 .wrap{
 
-    flex-direction: column;
+    flex-direction: row;
 }
 ul{
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 li {
     justify-content: space-between;
-    background-color: #cccccc;
     text-align: center;
+
 }
+
 
 .container.bigger {
     width: 100%;
@@ -64,7 +63,7 @@ li {
 }
 
 .hidden-on-desktop {
-    display: flex;
+    display: none;
     background-color: #ccfffe;
     border: 2px solid #cccccc ;
     padding: 15px 0px;
@@ -74,3 +73,62 @@ li {
 
 }
 
+p{
+    margin: unset;
+}
+
+.column.second-section{
+    flex: 0 0 35%;
+}
+
+
+footer.container{
+    margin-top: 85px;
+}
+
+.header-img img {
+    width: 100%;
+
+}
+
+.logo{
+    justify-content: flex-start;
+}
+
+.row.justify-center {
+    margin: 20px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 559px){
+
+    .hidden-on-desktop{
+        display: flex;
+
+    }
+    .sub-section{
+        flex-direction: column;
+    }
+
+    .wrap{
+        flex-direction: column;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    li {
+        justify-content: space-between;
+        background-color: #cccccc;
+        text-align: center;
+    }
+
+    .logo{
+        align-items: center;
+    }
+
+}

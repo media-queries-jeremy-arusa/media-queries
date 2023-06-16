@@ -2,8 +2,13 @@
 /*    display:flex;*/
 /*    flex-wrap: wrap;*/
 /*}*/
-
-
+h1 {
+    font-size: 4em;
+    margin: unset;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
 .nav-links{
     padding: unset;
     gap: 10px;
@@ -51,13 +56,21 @@ li {
     text-align: center;
 }
 
-
-
-
-
-
+.container.bigger {
+    width: 100%;
+}
 .hidden{
+    /*border: 2px solid #CCCCCC;*/
+}
+
+.hidden-on-desktop {
+    display: flex;
     background-color: #ccfffe;
-    border-color:#cccccc ;
+    border: 2px solid #cccccc ;
+    padding: 15px 0px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+
 }
 

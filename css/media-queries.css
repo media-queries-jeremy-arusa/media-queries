@@ -8,7 +8,7 @@ body {
 }
 .nav-links{
     padding: unset;
-    gap: 10px;
+    gap: 26px;
 
 }
 
@@ -101,13 +101,12 @@ footer.container{
 }
 
 #social-media-links{
-    /*align-items: end;*/
-    flex-direction: row-reverse;
-    margin-left: 100px;
+   flex-direction: row-reverse;
+    display: flex;
 }
 
 #social-media-links img{
-    flex-direction: row;
+
     max-height: 3em;
 
 }
@@ -146,3 +145,6 @@ footer.container{
     }
 
 }
+    /*.header-txt{*/
+    /*    padding: 0 10em;*/
+    /*}*/
